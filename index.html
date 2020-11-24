@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+        Quick Text
+        </title>
+    </head>
+    <body>
+        <form>
+            <label for="phone">Phone number:</label>
+            <input type="text" id="phone" name="phone"><br><br>
+            <input type="submit" value="Submit" onclick="submitButton();">
+          </form>
+
+        <script>
+            submitButton = () => {
+                const p = document.getElementById("phone").value;
+                const link = "https://api.whatsapp.com/send?phone=91" + p;
+                alert(link)
+                if(p) {
+                    window.open(link)
+                }
+            }
+        </script>
+    </body>
+
+</html>
