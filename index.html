@@ -4,24 +4,40 @@
         <title>
         Quick Text
         </title>
+        <link rel="stylesheet" type="text/css" href="main.css">
     </head>
     <body>
-        <form>
-            <label for="phone">Phone number:</label>
-            <input type="text" id="phone" name="phone"><br><br>
-            <input type="submit" value="Submit" onclick="submitButton();">
-          </form>
+        <div class="content">
+            <div>
+                <h1>Quick Text</h1>
+                <p>Text someone on whatsapp without saving their number on your device.</p>
+                <p>Just enter the phone number on in the textbox without any spaces or country code and enter submit!</p>
+            </div>
+            <form>
+                <label for="phone">Phone number:</label>
+                <input type="text" id="phone" name="phone" class="input-box"><br><br>
+                <input type="submit" value="Submit" onclick="submitButton();" class="submit-button">
+            </form>
+        </div>
+        
+
+        <div>
+            <footer class="site-footer">
+                <hr>
+                <a href="https://www.linkedin.com/in/dhruv-doshi-059494134/">
+                    <p>Made with &hearts; by Dhruv Doshi</p>
+                </a>
+        </footer>
+        </div>
 
         <script>
             submitButton = () => {
                 const p = document.getElementById("phone").value;
                 const link = "https://api.whatsapp.com/send?phone=91" + p;
-                alert(link)
                 if(p) {
                     window.open(link)
                 }
             }
         </script>
     </body>
-
 </html>

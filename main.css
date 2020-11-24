@@ -1,0 +1,43 @@
+body {
+    margin: 10vh;
+    background-color: rgb(159, 219, 46, 0.3);
+    color: black;
+}
+.content {
+    font-size: 4vh;
+    min-height: 80vh;
+    text-align: center;
+}
+
+.input-box {
+    height: 5vh;
+    width: 20vw;
+    font-size: 3vh;
+}
+
+.submit-button {
+    background-color: green;
+    border: 2px solid #115713;
+    border-radius: 12px;
+    color: white;
+    height: 7vh;
+    width: 25vh;
+    font-size: 4vh;
+
+}
+
+.submit-button:hover {
+    background-color: lawngreen;
+    color: black;
+}
+
+a {
+    color: black;
+    font-size: 2vh;
+    justify-self: center;
+    text-decoration: none;
+    text-align: center;
+}
+a:hover {
+    color: darkgreen
+}
